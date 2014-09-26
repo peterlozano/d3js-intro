@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Visualizacion de datos con d3.js</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section>
+        <h4>Visualizacion de datos con d3.js</h4>
+        <div><a href="http://d3js.org" target="_new"><img src="images/portada-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2>Estructura de la charla</h2>
+        <ul>
+          <li>1ª. Sobre visualizaciones en general</li>
+          <li>2ª. Primeros pasos con d3.js</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Visualizaciones</h2>
+        <p>"El objetivo principal de la visualización de datos es comunicar información clara y eficientemente a los usuarios por medio de gráficos informativos, tales como tablas y gráficas."</p>
+        <p>Fuente: <a href="http://en.wikipedia.org/wiki/Data_visualization" target="_blank">wikipedia</a></p>
+      </section>
+      <section>
+        <h2>Ejemplos<a href="https://github.com/mbostock/d3/wiki/Gallery" target="_blank"></a></h2>
+      </section>
+      <section>
+        <h4>Sencillas</h4>
+        <h4>(Gráficas típicas)</h4><img src="images/graficas-simples.png" width="100%"><a href="http://nvd3.org/examples/index.html" target="_blank">nvd3.org</a>
+      </section>
+      <section>
+        <h4>Riqueza de las naciones</h4><a href="http://bost.ocks.org/mike/nations/" target="_blank"><img src="images/nations-01.png" width="100%"></a>
+      </section>
+      <section>
+        <p>Nutrientes</p><a href="http://exposedata.com/parallel/" target="_blank"><img src="images/nutrient-01.png" width="100%"></a>
+      </section>
+      <section>
+        <p>Pases entre jugadores del Real Madrid en la primera mitad del partido contra el Elche (23.09.2014)</p>
+        <div><a href="http://bl.ocks.org/fhernand/raw/9a9f93f2a6b0e83a9294/" target="_blank"><img src="images/futbol-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <p>La Biblia</p>
+        <div><a href="http://bibviz.com/" target="_blank"><img src="images/biblia-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h1>Juegos</h1><a href="http://d3shooter.herokuapp.com/" target="_blank"><img src="images/juegos-02.png" width="100%"></a>
+      </section>
+      <section>
+        <h2>Proceso</h2>
+        <ul class="bullet">
+          <li>Data (opendata, scrapping, etc)</li>
+          <li>Planificacion</li>
+          <li>Transformación de datos</li>
+          <li>Visualización (d3.js)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>d3.js</h2>
+        <p>Mike Bostock</p>
+        <div><img src="images/mbostock-01.png" width="70%"></div>
+        <ul>
+          <li><a href="https://github.com/mbostock" target="_blank">https://github.com/mbostock</a></li>
+          <li><a href="http://bost.ocks.org/mike/" target="_blank">http://bost.ocks.org/mike/</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>http://bl.ocks.org/mbostock</h4>
+        <p>Howto:&nbsp;<a href="http://bost.ocks.org/mike/block/" target="_blank">Let's make a block</a></p>
+        <div><a href="http://bl.ocks.org/mbostock" target="_blank"><img src="images/blocks-01.png" width="70%"></a></div>
+        <p><a href="https://gist.github.com/peterlozano" target="_blank">https://gist.github.com/peterlozano</a><span>&nbsp; - &nbsp;</span><a href="http://bl.ocks.org/peterlozano" target="_blank">http://bl.ocks.org/peterlozano</a></p>
+      </section>
+      <seccion>
+        <h2>Conceptos básicos</h2>
+      </seccion>
+      <section>
+        <h2>Estandares</h2>
+        <ul>
+          <li>Css Selectors</li>
+          <li>SVG</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Estandares</h2>
+        <ul>
+          <li>CSS3 Selectors</li>
+          <li><a href="http://www.w3.org/TR/css3-selectors/" target="_blank">http://www.w3.org/TR/css3-selectors/</a></li>
+        </ul>
+        <pre><code class="language-javascript">// Standard CSS Selectors
+d3.select('.myclass');
+d3.select('div.myclass');
+d3.select('#myid');
+// SVG
+d3.select('circle');
+d3.select('circle.myclass');
+</code></pre>
+      </section>
+      <section>
+        <h2>SVG</h2>
+        <h3><a href="http://www.w3.org/TR/SVG/" target="_blank">http://www.w3.org/TR/SVG/</a></h3>
+        <div><img src="images/svg-01.png" width="100%"></div>
+      </section>
+      <section>
+        <h2>SVG</h2>
+        <h3><a href="http://www.w3.org/TR/SVG/" target="_blank">http://www.w3.org/TR/SVG/</a></h3>
+        <div><img src="images/svg-02.png" width="100%"></div>
+      </section>
+      <section>
+        <h2>Data binding</h2>
+        <div><a href="http://jsbin.com/napesu/1/edit" target="_"><img src="images/data-02.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2>Data binding (Update)</h2>
+        <div><a href="http://jsbin.com/napesu/3/edit" target="_blank"><img src="images/data-04.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2>Data binding (Enter)
+          <div><a href="http://jsbin.com/napesu/8/edit" target="_blank"><img src="images/data-05.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>Data binding (Exit)
+          <div><a href="http://jsbin.com/napesu/10/edit" target="_blank"><img src="images/data-07.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>Creando SVG
+          <div><a href="http://jsbin.com/napesu/11/edit" target="_blank"><img src="images/data-08.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>.call()
+          <div><a href="http://jsbin.com/napesu/13/edit" target="_blank"><img src="images/data-10.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>.call()
+          <div><a href="http://jsbin.com/napesu/15/edit" target="_blank"><img src="images/color-03.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>Scales</h2>
+        <div><a href="http://jsbin.com/napesu/18/edit" target="_blank"><img src="images/scale-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2>Actualizando datos y gráfico</h2>
+        <div><a href="http://jsbin.com/napesu/26/edit" target="_blank"><img src="images/actualiza-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h4>Ejemplo: Cycloid Optical Illusion</h4>
+        <div><a href="http://bl.ocks.org/peterlozano/480f90947c6e08be6b95" target="_blank"><img src="images/cycloid-01.png" width="50%"></a></div>
+      </section>
+      <section>
+        <h2><a href="https://github.com/mbostock/d3/wiki/Transitions" target="_blank">Transitions</a></h2>
+        <div><a href="http://jsbin.com/napesu/21/edit" target="_blank"><img src="images/transition-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2><a href="https://github.com/mbostock/d3/wiki/Transitions#d3_ease" target="_blank">Easing</a>
+          <div><a href="http://jsbin.com/napesu/23/edit" target="_blank"><img src="images/ease-01.png" width="100%"></a></div>
+        </h2>
+      </section>
+      <section>
+        <h2>Generators</h2>
+        <ul>
+          <li>PATH</li>
+          <li><a href="http://www.w3.org/TR/SVG/paths.html#PathData" target="_blank">http://www.w3.org/TR/SVG/paths.html#PathData</a></li>
+        </ul>
+        <table>
+          <tr>
+            <td><img src="images/path-01.png" width="200px"></td>
+            <td><img src="images/path-02.png" width="200px"></td>
+            <td><img src="images/path-03.png" width="200px"></td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Generators</h2>
+        <div><a href="http://jsbin.com/degiyi/2/edit" target="_blank"><img src="images/generator-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2><a href="https://github.com/mbostock/d3/wiki/API-Reference#d3layout-layouts" target="_blank">
+            Layouts
+            </a></h2>
+        <table>
+          <tr>
+            <td><a href="http://bl.ocks.org/mbostock/1044242" target="_blank">
+                <p>Bundle</p><img src="images/layout-01.png" width="100"></a></td>
+            <td><a href="http://bl.ocks.org/mbostock/1046712" target="_blank">
+                <p>Chord</p><img src="images/layout-02.png" width="100"></a></td>
+            <td><a href="http://bl.ocks.org/mbostock/1062288" target="_blank">
+                <p>Force</p><img src="images/layout-03.png" width="100"></a></td>
+          </tr>
+          <tr>
+            <td><a href="http://bl.ocks.org/mbostock/3048450" target="_blank">
+                <p>Histogram</p><img src="images/layout-04.png" width="100"></a></td>
+            <td><a href="http://bl.ocks.org/mbostock/3887235" target="_blank">
+                <p>Pie</p><img src="images/layout-05.png" width="100"></a></td>
+            <td><a href="http://bl.ocks.org/tchaymore/1249394" target="_blank">
+                <p>Tree</p><img src="images/layout-06.png" width="100"></a></td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h4>Layouts</h4>
+        <div><a href="http://jsbin.com/digoj/5/edit" target="_blank"><img src="images/layout-code-01.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h4>Layouts</h4>
+        <div><a href="http://jsbin.com/hikahu/9/edit" target="_blank"><img src="images/layout-code-02.png" width="100%"></a></div>
+      </section>
+      <section>
+        <h2><a href="https://github.com/mbostock/d3/wiki/API-Reference#d3geo-geography" target="_blank">Cartografía</a></h2>
+      </section>
+      <section>
+        <h2>Timers</h2>
+      </section>
+      <section>
+        <h2>Axis</h2>
+      </section>
+      <section>
+        <h2>Labels</h2>
+      </section>
+      <section>
+        <h2>Preguntas?</h2>
+      </section>
+      <section id="pedro">
+        <h2>Gracias</h2>
+        <h4>Pedro Lozano</h4>
+        <ul>
+          <li>Desarrollador Drupal</li>
+          <li>Interesado en Opendata y Visualizaciones</li>
+          <li><a href="http://twitter.com/peterlozano" target="_new">http://twitter.com/peterlozano</a></li>
+          <li><a href="http://github.com/peterlozano" target="_new">http://github.com/peterlozano</a></li>
+          <li><a href="http://peterlozano.com" target="_new">http://peterlozano.com</a></li>
+        </ul>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
