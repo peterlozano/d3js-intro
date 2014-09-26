@@ -1,0 +1,7 @@
+{
+  "name": "presentation-visualizacion-de-datos-con-d3js",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
