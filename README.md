@@ -2,9 +2,11 @@
 
 Charla sobre visualización de datos usando [d3.js](http://d3js.org/).
 
-> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+Ver en [http://peterlozano.github.io/d3js-intro/](http://peterlozano.github.io/d3js-intro/)
 
 ## View slides locally
+
+A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 First, ensure you have the following installed:
 
